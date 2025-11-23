@@ -17,6 +17,11 @@ The opponent, after a guess, gives the hints:
 Example: If the secret code is 4271 and a guess is 1234, then the feedback response would be 1 bull ("2" is in the right place) and 2 cows ("4" and "1" are in the number but wrong positions).​ **Winning the Game The first player who guesses all digits in their correct positions, or gets all bulls, wins. The game can be played with numbers, words, or other symbols, provided there are no duplicates allowed.
 
 
+
+
+
+
+
 # CODE
 import random
 digits = list('123456789') 
@@ -46,16 +51,5 @@ while True:
     cows -= bulls
     print(f"Result: {bulls} Bull{'s' if bulls != 1 else ''} , "
           f"{cows} Cow{'s' if cows != 1 else ''} ")
-print(f" CONGRATS! You have won the game! ")
-print(f"It took you only {g_count} guess to win!")
-
-
-
-
-
-
-
-          
-
 print(f" CONGRATS! You have won the game! ")
 print(f"It took you only {g_count} guess to win!")
